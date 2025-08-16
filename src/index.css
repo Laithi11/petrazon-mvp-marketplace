@@ -2,41 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Petrazon Design System - Desert-inspired marketplace theme
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Petrazon Brand Colors - Inspired by Petra's timeless beauty */
+    --background: 36 33% 97%;  /* Warm sand background */
+    --foreground: 20 14% 15%;  /* Deep charcoal text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 36 50% 95%;  /* Light sand cards */
+    --card-foreground: 20 14% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 36 50% 95%;
+    --popover-foreground: 20 14% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Petra Rose Red - Primary brand color */
+    --primary: 8 65% 55%;  /* Warm terracotta rose */
+    --primary-foreground: 36 50% 95%;
+    --primary-glow: 8 75% 65%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Sand Beige - Secondary color */
+    --secondary: 36 25% 85%;  /* Soft sand beige */
+    --secondary-foreground: 20 14% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 36 15% 88%;  /* Muted sand */
+    --muted-foreground: 20 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 195 15% 75%;  /* Cool desert sky */
+    --accent-foreground: 20 14% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 36 50% 95%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 36 20% 88%;
+    --input: 36 30% 90%;
+    --ring: 8 65% 55%;
 
-    --radius: 0.5rem;
+    /* Petrazon Design Enhancements */
+    --radius: 0.75rem;
+    
+    /* Beautiful gradients inspired by Petra's landscapes */
+    --gradient-hero: linear-gradient(135deg, hsl(8 65% 55%) 0%, hsl(8 75% 65%) 100%);
+    --gradient-sand: linear-gradient(180deg, hsl(36 33% 97%) 0%, hsl(36 25% 94%) 100%);
+    --gradient-sunset: linear-gradient(45deg, hsl(8 65% 55%), hsl(25 70% 60%), hsl(36 80% 70%));
+    
+    /* Elegant shadows with Petra rose glow */
+    --shadow-card: 0 4px 6px -1px hsl(8 65% 55% / 0.1), 0 2px 4px -1px hsl(8 65% 55% / 0.06);
+    --shadow-hero: 0 20px 25px -5px hsl(8 65% 55% / 0.25);
+    --shadow-glow: 0 0 30px hsl(8 75% 65% / 0.3);
+    
+    /* Smooth transitions */
+    --transition-elegant: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
